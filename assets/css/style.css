@@ -1,0 +1,78 @@
+body { 
+    background: url('../images/HaloWallpaper.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	margin-left: 10px;
+	font: #ffffff;
+	background-size: 100vw 100vh;
+	background-position: 50% 10%;
+}
+
+h1, h3 {
+	color: #ffffff;
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+}
+
+#game-title {
+	margin-bottom: 0px;
+	margin-top: 10px;
+	padding-bottom: 0px;
+}
+
+#choose {
+	color: #ffffff;
+}
+
+#character-title {
+	border-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+
+.hero {
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	height: 175px;
+	width: 175px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-color: #ADFF2F;
+	border-width: 3px;
+}
+
+.evil {
+	border-width: 3px;
+	border-color: #FF0000;
+}
+
+.btn {
+	font-size: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.defender-text,
+.attack-battle-update,
+.counter-attack-battle-update {
+	color: #ffffff;
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+#your-character {
+	margin-top: 5px;
+}
+
+#tartarus-image {
+	height: 90px;
+}

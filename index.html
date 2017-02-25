@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halo RPG</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Orbitron|Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body onload="HaloRPG()">
+	<!-- HALO THEME -->
+	<audio autoplay="autoplay" loop="loop">
+		<source src="assets/images/HaloTheme.mp3" type="audio/mp3">
+	</audio>
+	<!--PAGE HEADER -->
+	<div class="page-header" id="game-title">
+	  <h1>Halo RPG</h1>
+	</div>
+
+	<!-- AREA FOR SELECTING CHARACTERS -->
+	<div class="row">
+		<div class="col-xs-12" id="beginning">
+			<div class="page-header" id="character-title">
+			  <h3>CHARACTERS<small id="choose">(Choose one!)</small></h3>
+			</div>
+			
+			<!-- CHARACTER LIST -->
+			<div class="heroContainer">
+	            <div class="hero thumbnail" data-health="120" data-attack="8" 				data-counter-attack="10" data-name="Master Chief">
+	             	<h5 class="text-center">Master Chief</h5>
+	                <img class="img-responsive" alt="Responsive image" src= "assets/images/Chief.jpg" id="chief-image">
+	                <div class="caption">
+	                  <p class="text-center" id="health">HP:120</p>
+	                </div>
+	            </div>
+	            <div class="hero thumbnail" data-health="100" data-attack="12"
+	             	data-counter-attack="5" data-name="The Arbiter">
+	             	<h5 class="text-center">The Arbiter</h5>
+	                <img class="img-responsive" alt="Responsive image" src= "assets/images/Arbiter.jpg" id="arbiter-image">
+	                <div class="caption">
+	                  <p class="text-center" id="health">HP:100</p>
+	                </div>
+	            </div>
+	            <div class="hero thumbnail" data-health="150" data-attack="10"
+	             	data-counter-attack="20" data-name="Tartarus">
+	             	<h5 class="text-center">Tartarus</h5>
+	                <img class="img-responsive" alt="Responsive image" src= "assets/images/tartarus-lrg.jpg" id="tartarus-image">
+	                <div class="caption">
+	                  <p class="text-center" id="health">HP:150</p>
+	                </div>
+	            </div>
+	            <div class="hero thumbnail" data-health="180" data-attack="4"
+	             	data-counter-attack="25" data-name="The Flood">
+	             	<h5 class="text-center">The Flood</h5>
+	                <img class="img-responsive" alt="Responsive image" src= "assets/images/Flood.jpg" id="flood-image">
+	                <div class="caption">
+	                  <p class="text-center" id="health">HP:180</p>
+	                </div>
+	            </div>
+            </div>
+		</div>
+	</div>
+	
+	<!-- YOUR CHARACTER DIV -->
+	<div class="row">
+	  <div class="col-xs-12">
+	    <h3 id="your-character">YOUR CHARACTER</h3>
+	    <div class="yourCharacter"></div>
+	  </div>
+	</div>
+
+	<!-- ENEMIES DIV -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>ENEMIES AVAILABLE TO ATTACK</h3>
+        <div class="yourOpposition"></div>
+      </div>
+    </div>
+
+	<!-- ATTACK BUTTON DIV -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>FIGHT</h3>
+        <input class="btn btn-default" type="button" id="attack" value="Attack!">
+      </div>
+    </div>
+
+	<!-- DEFENDER DIV -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>DEFENDER</h3>
+        <div class="defender"></div>
+        <div class="defender-text"></div>
+        <div class="attack-battle-update"></div>
+        <div class="counter-attack-battle-update"></div>
+      </div>
+    </div>
+
+	<!-- RESET BUTTON DIV -->
+    <div class="row">
+      <div class="col-xs-12">
+        <input class="btn btn-default" type="button" id="reset" value="Reset">
+      </div>
+    </div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
